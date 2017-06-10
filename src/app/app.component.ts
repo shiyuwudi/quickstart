@@ -4,11 +4,14 @@ import { Component, OnInit } from '@angular/core';
   selector: 'my-app',
   template: `
     <h1>Hello {{name}}!!!??</h1>
+    <h2>管道</h2>
     <div>日期: {{ dateObj | date }}</div>
     <div>日期，时间，上下午: {{ dateObj | date: 'medium' }}</div>
     <div>时间 + 上下午: {{ dateObj | date: 'shortTime' }}</div>
     <div>时间管道: {{ dateObj | date: 'hh:mm:ss' }}</div>
-
+    
+    <hero-list></hero-list>
+    <logger></logger>
   `,
 })
 export class AppComponent implements OnInit {

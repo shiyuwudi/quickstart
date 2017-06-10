@@ -1,0 +1,13 @@
+.list {
+  border-color: green;
+  border-width: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  margin: 20px;
+  padding: 10px;
+}
+
+.selected {
+  color: red;
+  font-weight: bold;
+}

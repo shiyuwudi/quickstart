@@ -1,0 +1,15 @@
+<div class="container">
+  <h3>操作日志</h3>
+  <table border="1">
+    <tr>
+      <th>序号</th>
+      <th>时间</th>
+      <th>内容</th>
+    </tr>
+    <tr *ngFor="let msg of msgArr; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{msg.date.toLocaleString('cn')}}</td>
+      <td>{{msg.msg}}</td>
+    </tr>
+  </table>
+</div>
